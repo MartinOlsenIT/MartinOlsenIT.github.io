@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorittfilm Registrering</title>
+</head>
+<body>
+
+    <h1>Registrer Favorittfilm</h1>
+    <form>
+        <!-- Tittel på filmen -->
+        <label for="tittel">Filmtittel:</label>
+        <input type="text" id="tittel" name="tittel" placeholder="Skriv inn tittelen" required>
+
+        <!-- Årstal filmen kom ut -->
+        <label for="aarstal">Årstall:</label>
+        <input type="number" id="aarstal" name="aarstal" min="1888" max="2024" placeholder="Skriv inn årstall" required>
+
+        <!-- Sjanger -->
+        <label for="sjanger">Sjanger:</label>
+        <select id="sjanger" name="sjanger" required>
+            <option value="">Velg sjanger</option>
+            <option value="action">Action</option>
+            <option value="komedie">Komedie</option>
+            <option value="thriller">Thriller</option>
+            <option value="drama">Drama</option>
+            <option value="science-fiction">Science Fiction</option>
+            <option value="romantikk">Romantikk</option>
+        </select>
+
+        <!-- Submit knapp -->
+        <button type="submit">Registrer Film</button>
+    </form>
+
+</body>
+</html>
