@@ -1,38 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Konsept.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/Konsept.css">
 </head>
 <body>
-    <div id="div1" class="ButtonContainer">
-        <div>
-            <a href="index.html">
-            <button>Hjem</button>
-          </a>
-        </div>
-        <div>
-            <a href="Prod. og historiefortelling.html">
-                <button>Prod. og historiefortelling</button>
-            </a>
-        </div>
-        <div>
-            <a href="teknologi forståelse.html">
-                <button>teknologi forståelse</button>
-            </a>
-        </div>
-        <div>
-            <a href="Prosjekter.html">
-                <button>prosjekter</button>
-            </a>
-        </div>
-        <div> <a href="om meg.html"><button>Om meg</button></a></div>
-    
-    <div>
-        <a href="Kontakt meg.html"><button>Kontakt meg</button></a>
-    </div>
-   </div>
-   <script src="js/global-settings.js"></script>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">My Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my work and skills</p>
+        <button class="cta-button">Learn More</button>
+    </section>
+    <section id="services" class="services">
+        <h2>My Services</h2>
+        <div class="service-item">Service 1</div>
+        <div class="service-item">Service 2</div>
+        <div class="service-item">Service 3</div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-item">Project 1</div>
+        <div class="portfolio-item">Project 2</div>
+        <div class="portfolio-item">Project 3</div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>What My Clients Say</h2>
+        <div class="testimonial-item">Testimonial 1</div>
+        <div class="testimonial-item">Testimonial 2</div>
+        <div class="testimonial-item">Testimonial 3</div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>

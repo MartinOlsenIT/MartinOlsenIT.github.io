@@ -4,35 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="/css/settings.css">
+   
 </head>
 <body>
-    <div id="div1" class="ButtonContainer">
-        <div><a href="index.html"><button>Hjem</button></a></div>
-        <div><a href="konseptutvikling og programmering.html"><button>Konsept.utv og programmering</button></a></div>
-        <div><a href="Prod. og historiefortelling.html"><button>Prod. og historiefortelling</button></a></div>
-        <div><a href="teknologi forståelse.html"><button>Teknologi forståelse</button></a></div>
-        <div><a href="Prosjekter.html"><button>Prosjekter</button></a></div>
-        <div><a href="om meg.html"><button>Om meg</button></a></div>
-        <div><a href="Kontakt meg.html"><button>Kontakt meg</button></a></div>
-    </div>
-    
-    <h1 id="h1">Settings</h1>
-    <div id="div2">
-        <div>
-            <label for="fontsize">Font Size:</label>
-            <input type="range" id="fontsize" min="10" max="40" value="16">
+    <h1>Settings</h1>
+    <div id="div1">
+        <div id="div2">
+            <label for="fontsize">Font size</label>
+            <input type="range" id="fontsize" min="10" max="50" value="16">
             <span id="fontsize-value">16px</span>
         </div>
-        <div>
-            <label for="color3">Background Color:</label>
+        <div id="div3">
+            <label for="color3">Background color(soon) </label>
             <input type="color" id="color3">
         </div>
-        <div>
+        <div id="div4">
             <button id="save-settings">Save Settings</button>
+            <button id="reset-settings">Reset Settings</button>
         </div>
     </div>
-
+    <a href="index.html">
+        <button id="button1">Home</button>
+    </a>
     <script src="js/settings.js"></script>
 </body>
 </html>
