@@ -3,73 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <title>Welcome - My Portfolio</title>
+    <link rel="stylesheet" href="/css/welcome.css">
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const userName = localStorage.getItem('userName');
-            if (userName) {
-                document.getElementById('userNameDisplay').textContent = `${userName}`;
+        function redirectToMainPage() {
+            const nameInput = document.getElementById('nameInput').value;
+            if (nameInput) {
+                // Store the name in localStorage or use it as needed
+                localStorage.setItem('userName', nameInput);
+                // Redirect to the main page
+                window.location.href = "index.html";
+            } else {
+                alert('Name field cannot be empty');
             }
-        });
+        }
     </script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <p class="nav-logo">My Portfolio </p>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Prosjekter.html">Projects</a></li>
-                <li><a href="om meg.html">About me</a></li>
-                <li><a href="Prod. og historiefortelling.html">Prod. og historiefortelling</a></li>
-                <span id="userNameDisplay" class="user-name-display"></span>
-            
-
-            </ul>
-        </nav>
-        <div class="box">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-            </div>
+    
     </header>
-    <section id="hero" class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my work and skills</p>
-        <br>
-        <a class="cta-button" href="Prosjekter.html"> Projects</a>
-    </section>
-    <div class="ServContainer">
-        <h1 id="AboutH1">About me</h1>
-        <br>
-    <section id="services" class="services">
-        <h2>My dreamjobs</h2>
-        <div class="service-item">Ceo of IT business</div>
-        <div class="service-item">Game developer</div>
-        <div class="service-item">Cybersecurity Guy</div>
-    </section>
-    <section id="Classes" class="Classes">
-        <h2>My least favourite classes</h2>
-        <div class="class-item">Math</div>
-        <div class="class-item">English</div>
-        <div class="class-item">Science</div>
-    </section>
-  </div>
-  <br>
-  <hr>
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Please enter your name to continue:</p>
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <button onclick="redirectToMainPage()" class="cta-button">Continue</button>
+        </div>
+    </main>
     <footer>
-        <p>&copy; 2025 Martin's Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
-
-   
 </body>
 </html>
