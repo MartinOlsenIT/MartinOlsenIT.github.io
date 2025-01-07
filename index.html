@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="/css/index.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('userNameDisplay').textContent = `${userName}`;
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -12,14 +20,27 @@
             <p class="nav-logo">My Portfolio </p>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Prosjekter.html">Prosjects</a></li>
+                <li><a href="Prosjekter.html">Projects</a></li>
                 <li><a href="om meg.html">About me</a></li>
                 <li><a href="Prod. og historiefortelling.html">Prod. og historiefortelling</a></li>
-                <li><a href="Kontakt meg.html">Contact</a></li>
-                <li><a href="settings.html">settings</a></li>
+                <span id="userNameDisplay" class="user-name-display"></span>
+            
 
             </ul>
         </nav>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+            </div>
     </header>
     <section id="hero" class="hero">
         <h1>Welcome to My Portfolio</h1>
@@ -38,15 +59,17 @@
     </section>
     <section id="Classes" class="Classes">
         <h2>My least favourite classes</h2>
-        <div class="testimonial-item">Math</div>
-        <div class="testimonial-item">English</div>
-        <div class="testimonial-item">Science</div>
+        <div class="class-item">Math</div>
+        <div class="class-item">English</div>
+        <div class="class-item">Science</div>
     </section>
   </div>
+  <br>
+  <hr>
     <footer>
         <p>&copy; 2025 Martin's Portfolio. All rights reserved.</p>
     </footer>
 
-    <script src="/js/global-settings.js"></script>
+   
 </body>
 </html>
