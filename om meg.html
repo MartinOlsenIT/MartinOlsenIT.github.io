@@ -5,28 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om Meg - Martin</title>
     <link rel="stylesheet" href="/css/om meg.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('userNameDisplay').textContent = `${userName} ☰`;
+            }
+
+           
+            document.getElementById('userNameDisplay').addEventListener('click', function() {
+                document.getElementById('dropdownMenu').classList.toggle('show');
+            });
+        });
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('#userNameDisplay')) {
+                let dropdowns = document.getElementsByClassName('dropdown-content');
+                for (let i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="nav-logo">Min Portefølje</a>
+            <p class="nav-logo">My Portfolio </p>
             <ul class="nav-menu">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="konseptutvikling og programmering.html">Konseptutvikling og Programmering</a></li>
-                <li><a href="Prosjekter.html">Prosjekter</a></li>
-                <li><a href="Kontakt meg.html">Kontakt</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Prosjekter.html">Projects</a></li>
+                <li><a href="om meg.html">About me</a></li>
+                <li><a href="Prod. og historiefortelling.html">Prod. og historiefortelling</a></li>
+                <span id="userNameDisplay" class="user-name-display"></span>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="index.html">Logout</a>
+                </div>
+
             </ul>
         </nav>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
     <main>
         <section id="about" class="about">
             <h1>Om Meg</h1>
             <p>Hei, jeg heter Martin. Jeg er en IT-student på videregående skole med en stor interesse for teknologi og spillutvikling. Gjennom min tid på skolen har jeg tilegnet meg omfattende kunnskap om IT og hvordan det kan brukes til å løse komplekse problemer og skape innovative løsninger. Jeg er lidenskapelig opptatt av å utvikle spill og drømmer om å bli en profesjonell spillutvikler en dag.</p>
-            <p>Min utdanning har gitt meg en solid forståelse av programmering, systemutvikling og prosjektledelse. Jeg har jobbet med ulike prosjekter som har styrket mine ferdigheter innen både frontend- og backend-utvikling. Jeg er alltid på utkikk etter nye utfordringer og muligheter til å forbedre mine ferdigheter og bidra til spennende prosjekter.</p>
+            
         </section>
     </main>
+    <hr>
+    <br>
+<aside>
+    <div class="Cdiv">
+<h1>Kontakt meg</h1>
+<form>
+<label for="Name">name</label>
+<input type="text" id="Name" name="Name" required placeholder="Eks. Martin">
+<label for="Lname">Last name</label>
+<input type="text" id="Lname" name="Lname" required placeholder="Eks. Olsen">
+<br>
+<label for="Gmail">Gmail</label>
+<input type="text" id="Gmail" name="Gmail" required placeholder="Eks. Youtube@gmail.com">
+<label for="Message">Message</label>
+<input type="text" id="Message" name="Message" required placeholder="Eks. I want to buy a pizza">
+<br>
+<input type="submit" name="submit" id="submit" value="Send">
+
+</form></div>
+</aside>
+
     <footer>
-        <p>&copy; 2024 Martin. Alle rettigheter reservert.</p>
+        <p>&copy; 2025 Martin. Alle rettigheter reservert.</p>
     </footer>
     <script src="js/global-settings.js"></script>
 </body>

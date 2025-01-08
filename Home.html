@@ -11,20 +11,40 @@
             if (userName) {
                 document.getElementById('userNameDisplay').textContent = `${userName}`;
             }
+
+           
+            document.getElementById('userNameDisplay').addEventListener('click', function() {
+                document.getElementById('dropdownMenu').classList.toggle('show');
+            });
         });
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('#userNameDisplay')) {
+                let dropdowns = document.getElementsByClassName('dropdown-content');
+                for (let i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <p class="nav-logo">My Portfolio </p>
+            <p class="nav-logo">Min portefølje </p>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Prosjekter.html">Projects</a></li>
-                <li><a href="om meg.html">About me</a></li>
+                <li><a href="Home.html">Hjem</a></li>
+                <li><a href="Prosjekter.html">Prosjekter</a></li>
+                <li><a href="om meg.html">Om meg</a></li>
                 <li><a href="Prod. og historiefortelling.html">Prod. og historiefortelling</a></li>
                 <span id="userNameDisplay" class="user-name-display"></span>
-            
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="index.html">Logg ut</a>
+                </div>
 
             </ul>
         </nav>
@@ -43,25 +63,25 @@
             </div>
     </header>
     <section id="hero" class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my work and skills</p>
+        <h1>Velkommen til min portefølje</h1>
+        <p>Denne nettsiden vil vise deg hva jeg har lært og laget i år ved Informasjonsteknologi og medieproduksjon.</p>
         <br>
-        <a class="cta-button" href="Prosjekter.html"> Projects</a>
+        <a class="cta-button" href="Prosjekter.html"> Prosjekter</a>
     </section>
     <div class="ServContainer">
-        <h1 id="AboutH1">About me</h1>
+        <h1 id="AboutH1">Om meg</h1>
         <br>
     <section id="services" class="services">
-        <h2>My dreamjobs</h2>
+        <h2>Mine drømme jobber</h2>
         <div class="service-item">Ceo of IT business</div>
-        <div class="service-item">Game developer</div>
+        <div class="service-item">Spill utvikler.</div>
         <div class="service-item">Cybersecurity Guy</div>
     </section>
     <section id="Classes" class="Classes">
-        <h2>My least favourite classes</h2>
-        <div class="class-item">Math</div>
-        <div class="class-item">English</div>
-        <div class="class-item">Science</div>
+        <h2>Minst likte fag</h2>
+        <div class="class-item">Matte</div>
+        <div class="class-item">Engelsk</div>
+        <div class="class-item">naturfag</div>
     </section>
   </div>
   <br>
