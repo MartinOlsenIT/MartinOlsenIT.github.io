@@ -1,10 +1,9 @@
 body {
     font-style: italic;
-
-    height: 100%;
     margin: 0;
-   
-    background: linear-gradient(to right, rgb(34, 34, 34), rgb(53, 48, 48), rgb(34, 34, 34));
+    padding: 0;
+    color: #333;
+    background-color: #000000;
 }
 
 header {
@@ -12,32 +11,6 @@ header {
     padding: 10px 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.nav-logo {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    margin: 0;
-}
 .dropdown-content {
     display: none;
     border-radius: 5px;
@@ -71,6 +44,34 @@ header {
         margin-left: 20px;
         display: inline-block; /* Ensure it wraps around the text */
     }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
 .nav-menu a {
     color: #fff;
     text-decoration: none;
@@ -84,11 +85,12 @@ header {
 }
 
 .hero {
-    background-color: #000;
-    border-radius: 10px;
+    background-color: #1f1e1e;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
+    box-shadow: 6px 6px 6px rgb(62, 61, 61);
+    font-style: italic;
 }
 
 
@@ -98,38 +100,46 @@ section {
     margin: 0 auto;
 }
 
-.services, .skills, .fremtid{
+.services,
+.Classes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+}
+
+.ServContainer {
+    background-color: rgb(36, 35, 35);
+    border-radius: 50px;
     color: white;
 }
 
-.service-item, .skills-item,.fremtid-item {
-    background-color: #494747;
+.service-item,
+.class-item {
+    background-color:  rgb(36, 35, 35);
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-   
 }
-#sport{
-    border-radius: 10px;
-    width: 7%;
-    transition: width 0.2s ease-in-out;
-}
-#sport:hover{
-    width: 40%;
-}
-.service-item:hover, .skills-item:hover, .fremtid-item:hover {  
+
+.service-item:hover,
+.class-item:hover {
     transform: scale(1.05);
 }
 
+
 footer {
-    background-color: #02020a;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    font-style: italic;
 }
+
+#AboutH1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+

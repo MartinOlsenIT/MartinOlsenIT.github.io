@@ -1,25 +1,114 @@
 
+body{
+   font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(3, 3, 87), black);
+}
+
 section {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.services, .portfolio, .testimonials {
+.Prosjekter{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    color: white;
 }
 
-.service-item, .portfolio-item, .testimonial-item {
-    background-color: #fff;
+.Prosjekt-item{
+    background-color: #464545;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    
 }
 
-.service-item:hover, .portfolio-item:hover, .testimonial-item:hover {
+.Prosjekt-item:hover {
     transform: scale(1.05);
+}
+
+
+.dropdown-content {
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #3c3b3b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 100px; 
+    top: 80px; 
+}
+
+.dropdown-content a {
+    color: rgb(247, 239, 239);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.show {
+    display: block;
+}
+
+
+.user-name-display {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #000;
+        color: #ffffff; 
+        border-radius: 5px;
+        margin-left: 20px;
+        display: inline-block; 
+    }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #575757;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }

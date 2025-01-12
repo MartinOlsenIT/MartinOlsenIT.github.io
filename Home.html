@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Min Portofølje</title>
     <link rel="stylesheet" href="/css/index.css">
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const userName = localStorage.getItem('userName');
             if (userName) {
-                document.getElementById('userNameDisplay').textContent = `${userName}`;
+                document.getElementById('userNameDisplay').textContent = `${userName} ☰`;
             }
 
            
@@ -40,7 +40,9 @@
                 <li><a href="Home.html">Hjem</a></li>
                 <li><a href="Prosjekter.html">Prosjekter</a></li>
                 <li><a href="om meg.html">Om meg</a></li>
-                <li><a href="Prod. og historiefortelling.html">Prod. og historiefortelling</a></li>
+                <li><a href="konseptutvikling og programmering.html">Konsept.utv/programmering</a></li>
+                <li><a href="teknologi forståelse.html">Teknologiforståelse</a></li>
+                <li><a href="produksjon.html">Produksjon</a></li>
                 <span id="userNameDisplay" class="user-name-display"></span>
                 <div id="dropdownMenu" class="dropdown-content">
                     <a href="index.html">Logg ut</a>
@@ -74,7 +76,7 @@
     <section id="services" class="services">
         <h2>Mine drømme jobber</h2>
         <div class="service-item">Ceo of IT business</div>
-        <div class="service-item">Spill utvikler.</div>
+        <div class="service-item">Spill utvikler</div>
         <div class="service-item">Cybersecurity Guy</div>
     </section>
     <section id="Classes" class="Classes">

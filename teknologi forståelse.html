@@ -1,10 +1,95 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Min Portofølje</title>
+    <link rel="stylesheet" href="/css/teknologi.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('userNameDisplay').textContent = `${userName} ☰`;
+            }
+
+           
+            document.getElementById('userNameDisplay').addEventListener('click', function() {
+                document.getElementById('dropdownMenu').classList.toggle('show');
+            });
+        });
+
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('#userNameDisplay')) {
+                let dropdowns = document.getElementsByClassName('dropdown-content');
+                for (let i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
-    <script src="js/global-settings.js"></script>
+    <header>
+        <nav class="navbar">
+            <p class="nav-logo">Min portefølje </p>
+            <ul class="nav-menu">
+                <li><a href="Home.html">Hjem</a></li>
+                <li><a href="Prosjekter.html">Prosjekter</a></li>
+                <li><a href="om meg.html">Om meg</a></li>
+                <li><a href="konseptutvikling og programmering.html">Konsept.utv/programmering</a></li>
+                <li><a href="produksjon.html">produksjon og historiefortelling</a></li>
+            
+                <span id="userNameDisplay" class="user-name-display"></span>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="index.html">Logg ut</a>
+                </div>
+
+            </ul>
+        </nav>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+            </div>
+    </header>
+    <section id="hero" class="hero">
+        <h1>Velkommen til min portefølje</h1>
+        <p>teknologifortsåelse faget der vi lærer å bruke kommando linje, excel, packet tracer og obs studio, og av og til 3d modelering og arduino osv, men dette faget handler mer om hvordan teknologi funker. På denne siden skal eg vise deg kva eg har lært i dette faget.</p>
+    </section>
+    <section id="fremtid" class="fremtid">
+        <h2>fremtid</h2>
+        <div class="fremtid-item">kommando linje og powershell</div>
+        <div class="fremtid-item">C#</div>
+        <div class="fremtid-item">excel</div>
+
+        </section>
+
+    <section id="skills" class="skills">
+<h2>Prosjekter</h2>
+<div class="skills-item">kommando linje og powershell</div>
+<div class="skills-item">Datamaskin nettside</div>
+<div class="skills-item">excel</div>
+<div class="skills-item">packet tracer</div>
+<div class="skills-item">OBS studio</div>
+
+<div class="skills-item">3D modelering</div>
+<div class="skills-item">arduino og C#</div>
+</section>
+  
+  <br>
+  <hr>
+  
 </body>
 </html>
