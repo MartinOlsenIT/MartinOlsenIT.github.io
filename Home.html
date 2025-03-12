@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Portofølje</title>
     <link rel="stylesheet" href="/css/index.css">
+    
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const userName = localStorage.getItem('userName');
@@ -34,8 +36,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar"> 
             <p class="nav-logo">Min portefølje </p>
+    
+           
             <ul class="nav-menu">
                 <li><a href="Home.html">Hjem</a></li>
                 <li><a href="Prosjekter.html">Prosjekter</a></li>
@@ -45,10 +49,10 @@
                 <li><a href="produksjon.html">Produksjon</a></li>
                 <span id="userNameDisplay" class="user-name-display"></span>
                 <div id="dropdownMenu" class="dropdown-content">
-                    <a href="index.html">Logg ut</a>
+                <a href="index.html">Logg ut</a>
+                
                 </div>
-
-            </ul>
+</ul>
         </nav>
         <div class="box">
             <div></div>
@@ -64,20 +68,22 @@
         </div>
             </div>
     </header>
+    <main>
     <section id="hero" class="hero">
         <h1>Velkommen til min portefølje</h1>
         <p>Denne nettsiden vil vise deg hva jeg har lært og laget i år ved Informasjonsteknologi og medieproduksjon.</p>
         <br>
         <a class="cta-button" href="Prosjekter.html"> Prosjekter</a>
     </section>
+    <section></section>
     <div class="ServContainer">
         <h1 id="AboutH1">Om meg</h1>
         <br>
     <section id="services" class="services">
-        <h2>Mine drømme jobber</h2>
+        <h2>Mine drømme studie</h2>
         <div class="service-item">Ceo of IT business</div>
-        <div class="service-item">Spill utvikler</div>
-        <div class="service-item">Cybersecurity Guy</div>
+        <div class="service-item"><a style="text-decoration: none; color: white;" href="https://karrierestart.no/skill/1702">Spill utvikler</a> </div>
+        <div class="service-item"><a style="text-decoration: none; color: white;" href="https://www.noroff.no/studier/hoyskole/cyber-security"> Cybersecurity Guy</a></div>
     </section>
     <section id="Classes" class="Classes">
         <h2>Minst likte fag</h2>
@@ -85,7 +91,7 @@
         <div class="class-item">Engelsk</div>
         <div class="class-item">naturfag</div>
     </section>
-  </div>
+  </div></main>
   <br>
   <hr>
     <footer>

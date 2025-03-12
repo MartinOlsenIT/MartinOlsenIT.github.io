@@ -125,8 +125,11 @@ section {
 
 .ServContainer {
     background-color: rgb(36, 35, 35);
-    border-radius: 50px;
+    border-radius: 20px;
     color: white;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 .service-item,
@@ -143,32 +146,16 @@ section {
 .class-item:hover {
     transform: scale(1.05);
 }
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+@media (max-width: 480px){
+.ServContainer {
+    width: 100%;
+    height: 100%;
+    width: 90%;
+}
+.service-item, .class-item {
+    padding: 6px;
 }
 
-.contact input,
-.contact textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact button:hover {
-    background-color: #575757;
 }
 
 footer {
