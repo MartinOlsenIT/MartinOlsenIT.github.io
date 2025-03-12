@@ -148,8 +148,8 @@ section {
 }
 @media (max-width: 480px){
 .ServContainer {
-    height: 70vh;
-    width: 90vw;
+    height: 60vh;
+    width: 80vw;
 }
 .service-item, .class-item {
     padding: 6px;
