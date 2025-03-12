@@ -150,6 +150,7 @@ section {
 .ServContainer {
     height: 60vh;
     width: 80vw;
+    padding: 20px;
 }
 .service-item, .class-item {
     padding: 6px;
