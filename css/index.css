@@ -148,7 +148,7 @@ section {
 }
 @media (max-width: 480px){
 .ServContainer {
-    height: 100vh;
+    height: 70vh;
     width: 90vw;
 }
 .service-item, .class-item {
