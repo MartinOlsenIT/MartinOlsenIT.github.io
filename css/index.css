@@ -7,6 +7,27 @@ body {
     background-color: #000000;
 }
 
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #470545;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #310b7e;
+    border-radius: 6px;
+}
+
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #394197;
+}
+
+
+
 header {
     background-color: #000;
     padding: 10px 0;
@@ -127,16 +148,16 @@ section {
     background-color: rgb(36, 35, 35);
     border-radius: 20px;
     color: white;
-    width: 80%;
-    padding: 10px;
+    width: 90%;
+    padding: 4px;
     margin: 0 auto;
 }
 
 .service-item,
 .class-item {
     background-color: #4b4848;
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -148,12 +169,23 @@ section {
 }
 @media (max-width: 480px){
 .ServContainer {
-    height: 60vh;
     width: 80vw;
     padding: 20px;
 }
 .service-item, .class-item {
     padding: 6px;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #470545;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #310b7e;
+    border-radius: 6px;
 }
 
 }
