@@ -7,32 +7,6 @@
     <link rel="stylesheet" href="/css/index.css">
     
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const userName = localStorage.getItem('userName');
-            if (userName) {
-                document.getElementById('userNameDisplay').textContent = `${userName} ☰`;
-            }
-
-           
-            document.getElementById('userNameDisplay').addEventListener('click', function() {
-                document.getElementById('dropdownMenu').classList.toggle('show');
-            });
-        });
-
-        
-        window.onclick = function(event) {
-            if (!event.target.matches('#userNameDisplay')) {
-                let dropdowns = document.getElementsByClassName('dropdown-content');
-                for (let i = 0; i < dropdowns.length; i++) {
-                    let openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -47,11 +21,7 @@
                 <li><a href="konseptutvikling og programmering.html">Konsept.utv/programmering</a></li>
                 <li><a href="teknologi forståelse.html">Teknologiforståelse</a></li>
                 <li><a href="produksjon.html">Produksjon</a></li>
-                <span id="userNameDisplay" class="user-name-display"></span>
-                <div id="dropdownMenu" class="dropdown-content">
-                <a href="index.html">Logg ut</a>
-                
-                </div>
+             
 </ul>
         </nav>
         <div class="box">

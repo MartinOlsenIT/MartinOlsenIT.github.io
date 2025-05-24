@@ -1,10 +1,14 @@
-body {
-    font-style: italic;
 
+:root {
+ --main-gradient: linear-gradient(to right, #171515, #190758, #171515);
+    --primary-color: #555353;
+    --tertiary-color: rgb(4, 10, 54);
+}
+body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #000000;
+    background: var(--main-gradient);
 }
 
 
@@ -29,7 +33,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 header {
-    background-color: #000;
+    background: var(--main-gradient);
     padding: 10px 0;
 }
 
@@ -41,11 +45,11 @@ header {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    right: 100px; /* Adjust based on your layout */
-    top: 80px; /* Adjust based on your layout */
+    right: 100px; 
+    top: 80px; 
 }
 
-/* Dropdown links */
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -56,11 +60,9 @@ header {
     display: block;
 }
 
-/* Style for the username display */
 .user-name-display {
         cursor: pointer;
         padding: 10px;
-        background-color: #000;
         color: #ffffff; /* Changed to white for better contrast */
         border-radius: 5px;
         margin-left: 20px;
@@ -88,8 +90,15 @@ header {
     gap: 15px;
     margin: 0;
     padding: 0;
+    
 }
-
+li{
+    transition: all 0.4s ease-in;
+}
+li:hover{
+    text-decoration: white  underline;
+text-underline-offset: 7px;
+}
 .nav-menu li {
     margin: 0;
 }
@@ -103,21 +112,23 @@ header {
 }
 
 .nav-menu a:hover {
-    background-color: #575757;
+    background-color: var(--main-gradient);
 }
 
 .hero {
-    background-color: #1f1e1e;
+    background-color: var(--tertiary-color);
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
-    box-shadow: 6px 6px 6px rgb(62, 61, 61);
-    font-style: italic;
+   max-width: 1000px;
+   padding: 70px;
+    box-shadow: 4px 4px 6px rgb(138, 137, 137);
+  
+   border-radius: 10px;
 }
 
 .cta-button {
-    background-color: #fff;
-    color: #000;
+    background: var(--primary-color);
+    color: #fffefe;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -127,7 +138,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #ddd;
+    background-color: #827d7d;
 }
 
 section {
@@ -145,17 +156,19 @@ section {
 }
 
 .ServContainer {
-    background-color: rgb(36, 35, 35);
+    background-color: var(--tertiary-color);
     border-radius: 20px;
     color: white;
     width: 90%;
     padding: 4px;
     margin: 0 auto;
+    box-shadow: 4px 4px 6px rgb(138, 137, 137);
+
 }
 
 .service-item,
 .class-item {
-    background-color: #4b4848;
+    background: var(--primary-color);
     padding: 10px;
     margin: 15px;
     border-radius: 5px;
@@ -175,23 +188,17 @@ section {
 .service-item, .class-item {
     padding: 6px;
 }
-body::-webkit-scrollbar {
-    width: 12px;
+
+.hero {
+    padding: 20px;
+    height: 25vh;
+    width: 80vw;
+}
 }
 
-body::-webkit-scrollbar-track {
-    background: #470545;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #310b7e;
-    border-radius: 6px;
-}
-
-}
 
 footer {
-    background-color: #000;
+    background: var(--primary-color);
     color: #fff;
     text-align: center;
     padding: 10px 0;

@@ -8,13 +8,13 @@ html, body {
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(4, 10, 54),rgb(0, 0, 9));
 }
 
-/* Wrapper to contain the main content and footer */
+
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    align-items: center; 
 }
 
 /* Main content should take up the remaining space */
